@@ -6,9 +6,9 @@
         <listener class-name="utils.Listeners.AnnotationTransformer"/>
     </listeners>
 
-    <test name="TesteLogin">
+    <test name="LoginTest">
         <classes>
-            <class name="tests.TesteLogin"/>
+            <class name="tests.LoginTest"/>
         </classes>
     </test>
 </suite>

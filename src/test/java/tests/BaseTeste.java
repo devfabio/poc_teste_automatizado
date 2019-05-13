@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
-public class TesteBase {
+public class BaseTeste {
 
     public WebDriver driver;
     public WebDriverWait espera;

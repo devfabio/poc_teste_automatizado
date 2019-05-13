@@ -7,11 +7,11 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-import tests.TesteBase;
+import tests.BaseTeste;
 import utils.ExtentReports.ExtentManager;
 import utils.ExtentReports.ExtentTestManager;
 
-public class TestListeners extends TesteBase implements ITestListener{
+public class TestListeners extends BaseTeste implements ITestListener{
     private static String getTestMethodName(ITestResult iTestResult) {
         return iTestResult.getMethod().getConstructorOrMethod().getName();
     }
@@ -48,7 +48,7 @@ public class TestListeners extends TesteBase implements ITestListener{
 
         //Obtenha o driver do TesteBase e atribua à variável webdriver local.
         Object testClass = iTestResult.getInstance();
-        WebDriver webDriver = ((TesteBase) testClass).getDriver();
+        WebDriver webDriver = ((BaseTeste) testClass).getDriver();
 
         //
         String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)webDriver).

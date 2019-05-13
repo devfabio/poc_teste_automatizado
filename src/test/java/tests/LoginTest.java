@@ -9,7 +9,7 @@ import utils.ExtentReports.ExtentTestManager;
 
 import java.lang.reflect.Method;
 
-public class TesteLogin  extends TesteBase{
+public class LoginTest extends BaseTeste{
 
     @Test (priority = 0, description="Cenário de login inválido com nome de usuário e senha incorretos.")
     public void testeLoginInvalido_NomeUsuarioInvalidoSenhaInvalida (Method method) {

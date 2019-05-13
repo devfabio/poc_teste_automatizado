@@ -6,7 +6,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
-import tests.TesteBase;
+import tests.BaseTeste;
 import utils.ExtentReports.ExtentTestManager;
 
 public class Retry implements IRetryAnalyzer{
@@ -30,7 +30,7 @@ public class Retry implements IRetryAnalyzer{
 
     public void extendReportsFailOperations (ITestResult iTestResult) {
         Object testClass = iTestResult.getInstance();
-        WebDriver webDriver = ((TesteBase) testClass).getDriver();
+        WebDriver webDriver = ((BaseTeste) testClass).getDriver();
         String base64Screenshot = "data:image/png;base64,"+((TakesScreenshot)webDriver).getScreenshotAs(OutputType.BASE64);
         ExtentTestManager.getTest().log(LogStatus.FAIL,"Teste Falhou",
                 ExtentTestManager.getTest().addBase64ScreenShot(base64Screenshot));
