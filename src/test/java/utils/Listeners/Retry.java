@@ -6,7 +6,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
-import tests.BaseTeste;
+import test.BaseTeste;
 import utils.ExtentReports.ExtentTestManager;
 
 public class Retry implements IRetryAnalyzer{
