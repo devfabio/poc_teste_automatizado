@@ -8,7 +8,9 @@
 
     <test name="LoginTest">
         <classes>
-            <class name="test.LoginTest"/>
+            <class name="test.LoginInvalidoTest"/>
+            <class name="test.LoginInvalidoCamposVazioTest"/>
+            <class name="test.LoginValidoTest"/>
         </classes>
     </test>
 </suite>
